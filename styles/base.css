@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #800;
+    --secondary-color: #444444;
+    --accent-color-1: #eee;
+    --accent-color-2: #fff;
+    --font-family-1: "Momo Trust Display", sans-serif;
+    --font-family-2: 'Inter', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 15px 25px 25px;
+    align-items: end;
+    border-bottom: solid 1px var(--secondary-color);
+    column-gap: 8px;
+    font-family: var(--font-family-1);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    font-family: var(--font-family-2);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 25px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--accent-color-1);
+}
+
+.navigation li.current {
+    background-color: var(--accent-color-1);
+}
+
+.navigation a:hover {
+    color: var(--accent-color-2);
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    margin-left: 25px;
+    color: var(--secondary-color);
+    font-family: var(--font-family-1);
+}
+
+section {
+    background-color: var(--accent-color-1);
+    margin: 25px;
+}
+
+section h2 {
+    background-color: var(--primary-color);
+    color: var(--accent-color-2);
+    padding: 5px;
+    font-family: var(--font-family-1);
+}
+
+section p {
+    text-align: justify;
+    padding: 0px 25px 25px 25px;
+    font-family: var(--font-family-2);
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.filter-btns {
+    display: flex;
+    width: 100%;
+}
+
+.filter-btns button {
+    flex: 1;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2)
+}
+
+.credits {
+    text-align: center;
+    margin: 15px 0;
+    font-family: var(--font-family-2);
+    color: var(--primary-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.container button {
+    font-family: var(--font-family-2);
+    color: var(--secondary-color);
+}
+
+footer {
+    background: var(--secondary-color);
+    justify-items: center;
+    padding: 10px;
+    color: var(--accent-color-2);
+    font-family: var(--font-family-2);
+}
+
+.social {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.social a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+}

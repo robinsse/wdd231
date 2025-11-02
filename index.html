@@ -4,12 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="W01 Assignment - Selena Robins">
+    <meta name="author" content="Selena Robins">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css">
 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 600px)">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/course-cards.js" defer></script>
+    <script src="scripts/filter-buttons.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <header>
+        <img src="images/feather-logo.svg" alt="Site Logo" width="640" height="640">
+        <span>Selena Robins</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>I am a half-Filipino, quarter-Dutch, eighth-Chinese, sixteenth-German, sixteenth-Irish, Canadian-born
+                citizen of the
+                United States. I have worked for BYU-Idaho Online since 2019 and am currently the Curriculum Maintenance
+                Manager servicing BYU-Pathway Worldwide. I have a B.A in Mass Communication from BYU and a M.A. in
+                Instructional Technology and Learning Science
+                from Utah State. I served a mission in Bucharest, Romania before marrying my college sweetheart,
+                Cameron. We live in
+                Rexburg, ID and have four sons and one daughter. In my spare time I like to spend time with family,
+                watch movies and
+                write. If I could share one thing with my family that I have learned in my life, it's that true joy
+                comes from living
+                the Gospel of Jesus Christ.</p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/headshot.webp" alt="Student Photo">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-btns">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div class="credits"></div>
+            <div class="container"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/selenarobins"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/selenawingrobins/"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/selena-robins-76b91876/"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="robinsse.github.io/wdd231/index.html"><img src="images/github.svg" alt="GitHub"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Selena Robins - Idaho, USA</p>
+        <p id="lastModified">Last Modified: <span id="when"></span></p>
+    </footer>
 
 </body>
 

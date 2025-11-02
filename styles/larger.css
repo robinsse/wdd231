@@ -1,0 +1,35 @@
+header,
+main,
+nav,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    grid-template-columns: 24px auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navigation {
+    display: block;
+    border-bottom: solid 1px #eee;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation a {
+    border: none;
+}
+
+.filter-btns button:hover {
+    background-color: var(--accent-color-1);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
