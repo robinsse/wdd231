@@ -1,0 +1,23 @@
+{
+    "familyName": "Robins",
+    "dateMovedIn": "2018-08-15",
+    "numberOfRecords": 3,
+    "visted": true,
+    "familyMembers": [
+        {
+            "name": "Selena Robins",
+            "gender": "Female",
+            "birthDate": "1979-01-01"
+        },
+        {
+            "name": "Cameron Robins",
+            "gender": "Male",
+            "birthDate": "1979-01-01"
+        },
+        {
+            "name": "Sophia Robins",
+            "gender": "Female",
+            "birthDate": "2005-01-01"
+        }
+    ]
+}
