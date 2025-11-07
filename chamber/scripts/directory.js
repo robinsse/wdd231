@@ -1,4 +1,4 @@
-const url = 'https://robinsse.github.io/chamber/businesses.json';
+const url = 'https://robinsse.github.io/wdd231/chamber/businesses.json';
 const cards = document.querySelector('#cards');
 
 async function getDirectoryData() {
