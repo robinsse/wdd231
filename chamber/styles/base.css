@@ -1,53 +1,161 @@
 :root {
-    --primary-color: #11224E;
-    --secondary-color: #F87B1B;
+    --primary-color: #F87B1B;
+    --secondary-color: #11224E;
     --accent-color-1: #CBD99B;
     --accent-color-2: #eeeeee;
     --font-family-1: "Fredericka the Great", serif;
     --font-family-2: "Inria Serif", serif;
 }
 
-header,
-p {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+header h1 {
     color: var(--secondary-color);
 }
 
-h2 {
+.hamburger {
+    background: none;
+    border: none;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
-header,
-h2,
-p {
-    font-family: var(--font-family-1);
-    display: block;
-    text-align: center;
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
 }
 
-p,
-footer {
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
     font-family: var(--font-family-2);
 }
 
-#cards {
-    background-color: var(--accent-color-1);
-    border-radius: 8px;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+.navigation.show {
+    display: block;
 }
 
-img {
-    border-radius: 8px;
-    border: solid 5px var(--primary-color);
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
     display: block;
+    padding: .8rem 25px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--accent-color-1);
+}
+
+.navigation li.current {
+    background-color: var(--accent-color-1);
+}
+
+.navigation a:hover {
+    color: var(--accent-color-2);
+    background-color: var(--secondary-color);
+}
+
+h1 {
+    margin-left: 25px;
+    color: var(--secondary-color);
+    font-family: var(--font-family-1);
+}
+
+section {
+    background-color: var(--accent-color-1);
+}
+
+h2 {
+    color: var(--secondary-color);
+    padding: 5px;
+    font-family: var(--font-family-1);
+    text-align: center;
+}
+
+section h3 {
+    background-color: var(--primary-color);
+    color: var(--accent-color-2);
+    padding: 5px;
+    font-family: var(--font-family-1);
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+    font-family: var(--font-family-2);
+}
+
+section a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.filter-btns {
+    display: flex;
+    width: 100%;
+}
+
+.filter-btns button {
+    flex: 1;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2)
+}
+
+.credits {
+    text-align: center;
+    margin: 15px 0;
+    font-family: var(--font-family-2);
+    color: var(--primary-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
 }
 
+.container button {
+    font-family: var(--font-family-2);
+    color: var(--secondary-color);
+}
+
 footer {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
+    justify-items: center;
+    padding: 10px;
     color: var(--accent-color-2);
-    padding: 25px;
-    text-align: center;
+    font-family: var(--font-family-2);
+}
+
+.social {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.social a {
+    width: 44px;
+    height: 44px;
+    display: flex;
 }
