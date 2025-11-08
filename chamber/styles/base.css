@@ -6,3 +6,48 @@
     --font-family-1: "Fredericka the Great", serif;
     --font-family-2: "Inria Serif", serif;
 }
+
+header,
+p {
+    color: var(--secondary-color);
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+header,
+h2,
+p {
+    font-family: var(--font-family-1);
+    display: block;
+    text-align: center;
+}
+
+p,
+footer {
+    font-family: var(--font-family-2);
+}
+
+#cards {
+    background-color: var(--accent-color-1);
+    border-radius: 8px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+img {
+    border-radius: 8px;
+    border: solid 5px var(--primary-color);
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2);
+    padding: 25px;
+    text-align: center;
+}

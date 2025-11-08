@@ -1,13 +1,6 @@
 const url = 'https://robinsse.github.io/wdd231/chamber/businesses.json';
 const cards = document.querySelector('#cards');
 
-async function getDirectoryData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    //console.table(data.companies);
-    displayDirectory(data.businesses);
-}
-getDirectoryData();
 const displayDirectory = (businesses) => {
     businesses.forEach((business) => {
         let card = document.createElement('section');
@@ -36,3 +29,11 @@ const displayDirectory = (businesses) => {
         cards.appendChild(card);
     });
 }
+
+async function getDirectoryData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    //console.table(data.companies);
+    displayDirectory(data.businesses);
+}
+getDirectoryData();

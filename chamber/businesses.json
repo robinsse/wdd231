@@ -2,7 +2,7 @@
     "businesses": [
         {
             "name": "Righteous Slice",
-            "address": "175 W 2nd S #100, Rexburg, ID 83440",
+            "address": "175 W 2nd S #100",
             "phone": "(208) 820-4597",
             "website": "www.righteousslice.com",
             "logo": "images/righteousslice.webp",
@@ -10,7 +10,7 @@
         },
         {
             "name": "The Hickory",
-            "address": "485 N 2nd E Suite 104, Rexburg, ID 83440",
+            "address": "485 N 2nd E Suite 104",
             "phone": "(208) 359-2328",
             "website": "www.thehickorybbq.com",
             "logo": "images/thehickory.webp",
@@ -18,7 +18,7 @@
         },
         {
             "name": "Fresco Kitchen & Grill",
-            "address": "1181 S Yellowstone Hwy, Rexburg, ID 83440",
+            "address": "1181 S Yellowstone Hwy",
             "phone": "(208) 497-0480",
             "website": "www.frescokitchengrill.com",
             "logo": "images/fresco.webp",
@@ -26,7 +26,7 @@
         },
         {
             "name": "Cafe Sabor",
-            "address": "160 W 2nd S, Rexburg, ID 83440",
+            "address": "160 W 2nd S",
             "phone": "(208) 656-2885",
             "website": "www.cafesabor.com",
             "logo": "images/cafesabor.webp",
@@ -34,7 +34,7 @@
         },
         {
             "name": "Teton Sourdough Co.",
-            "address": "52 College Ave, Rexburg, ID 83440",
+            "address": "52 College Ave",
             "phone": "(208) 656-1852",
             "website": "facebook.com/TetonSourdoughCo",
             "logo": "images/tetonsourdough.webp",
@@ -42,19 +42,19 @@
         },
         {
             "name": "Red Rabbit Grill",
-            "address": "155 W Main St #8, Rexburg, ID 83440",
+            "address": "155 W Main St #8",
             "phone": "(208) 715-0002",
             "website": "www.redrabbitgrill.com",
             "logo": "images/redrabbit.webp",
             "membershipLevel": 2
         },
         {
-            "name": "Red 8: Asian Cuisine and Sushi Bar",
-            "address": "469 N 2nd E, Rexburg, ID 83440",
+            "name": "Red 8",
+            "address": "469 N 2nd E",
             "phone": "(208) 356-6666",
             "website": "www.red8rexburg.com",
             "logo": "images/red8.webp",
             "membershipLevel": 2
         }
-    ]  
+    ]
 }
