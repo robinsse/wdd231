@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Rexburg Chamber of Commerce</title>
+    <meta name="description"
+        content="Directory of businesses and services in Rexburg, Idaho, provided by the Rexburg Chamber of Commerce.">
+    <meta name="author" content="Selena Robins">
+
+    <meta property="og:title" content="Rexburg Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore the directory of businesses and services in Rexburg, Idaho.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://robinsse.github.io/chamber/directory.html">
+    <meta property="og:image" content="https://robinsse.github.io/wdd231/chamber/og-image.jpeg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 700px)">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rexburg Chamber of Commerce</h1>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Business Directory</h2>
+        <div class="forecast"></div>
+        <section>
+            <div id="cards"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Rexburg Chamber of Commerce</p>
+        <p>1234 Main Street</p>
+        <p>Rexburg, ID 83440</p>
+        <p>info@rexburgcommerce.org</p>
+        <p>(800) 555-1234</p>
+        <div class="social">
+            <a href="https://www.facebook.com/selenarobins"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/selenawingrobins/"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.google.com"><img src="images/google.svg" alt="Google"></a>
+        </div>
+        <p>WDD231 Class Project</p>
+        <p>Developed by Selena Robins</p>
+        <p>&copy; <span id="currentyear"></span> Rexburg Chamber of Commerce</p>
+        <p id="lastModified">Last Modified: <span id="when"></span></p>
+    </footer>
+</body>
+
+</html>
