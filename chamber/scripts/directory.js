@@ -37,3 +37,20 @@ async function getDirectoryData() {
     displayDirectory(data.businesses);
 }
 getDirectoryData();
+
+const gridButton = document.getElementById('grid');
+const listButton = document.getElementById('list');
+
+gridButton.addEventListener('click', () => {
+    cards.classList.add('grid-view');
+    cards.classList.remove('list-view');
+    gridButton.classList.add('active');
+    listButton.classList.remove('active');
+});
+
+listButton.addEventListener('click', () => {
+    cards.classList.add('list-view');
+    cards.classList.remove('grid-view');
+    listButton.classList.add('active');
+    gridButton.classList.remove('active');
+});

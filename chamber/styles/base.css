@@ -159,3 +159,23 @@ footer {
     height: 44px;
     display: flex;
 }
+
+.toggle button {
+    background-color: var(--acceent-color-2);
+    font-family: var(--font-family-2);
+}
+
+.toggle button.active {
+    background-color: var(--primary-color);
+    color: var(--accent-color-2);
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list-view img {
+    display: none;
+}
