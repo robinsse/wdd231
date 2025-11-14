@@ -53,3 +53,5 @@ listButton.addEventListener('click', () => {
     listButton.classList.add('active');
     gridButton.classList.remove('active');
 });
+
+export { displayDirectory, getDirectoryData };

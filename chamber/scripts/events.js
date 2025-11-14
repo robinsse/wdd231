@@ -4,24 +4,21 @@ const eventsContainer = document.querySelector('#events');
 const displayEvents = (eventsData) => {
     eventsData.forEach((item) => {
         let event = document.createElement('section');
-        let title = document.createElement('h3');
+        let title = document.createElement('p');
         let description = document.createElement('p');
-        let date = document.createElement('p');
-        let time = document.createElement('p');
+        let dateTime = document.createElement('p');
         let location = document.createElement('p');
 
-        title.textContent = item.title;
+        title.innerHTML = `<strong>${item.title}</strong>`;
         description.textContent = item.description;
-        date.textContent = item.date;
-        time.textContent = item.time;
+        dateTime.textContent = `${item.date} @ ${item.time}`;
         location.textContent = item.location;
 
         event.appendChild(title);
         event.appendChild(description);
-        event.appendChild(date);
-        event.appendChild(time);
+        event.appendChild(dateTime);
         event.appendChild(location);
-        
+
         eventsContainer.appendChild(event);
     });
 }
