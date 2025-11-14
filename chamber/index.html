@@ -29,6 +29,10 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/footer.js" defer></script>
+    
+    <script type="module" src="scripts/weather.js" defer></script>
+    <script type="module" src="scripts/forecast.js" defer></script>
+    <script type="module" src="scripts/events.js" defer></script>
 </head>
 
 <body>
@@ -47,14 +51,30 @@
     </nav>
 
     <main>
+        <h2>Home</h2>
         <div class="hero">
             <img src="images/hero-image.webp" alt="Hemming Village">
         </div>
         <div class="events-weather">
-            <h2>Home</h2>
-            <section class="events"></section>
-            <section class="current-weather"></section>
-            <section class="forecast"></section>
+            <div class="events"></div>
+            <div class="current-weather">
+                <h3>Current Weather</h3>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+                <p id="weather-description"></p>
+                <p>Temperature: <span id="current-temp"></span> °F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>        
+            </div>
+            <div class="forecast">
+                <h3>Forecast</h3>
+                <p>Today: <span id="today"></span></p>
+                <p id="today-weather"></p> 
+                <p>Tomorrow: <span id="tomorrow"></span></p>
+                <p id="tomorrow-weather"></p>
+                <p>Day After: <span id="day-after"></span></p>
+                <p id="day-after-weather"></p>
+            </div>
         </div>
         <div class="featured"></div>
     </main>

@@ -1,5 +1,7 @@
 const url = 'https://robinsse.github.io/wdd231/chamber/data/members.json';
 const cards = document.querySelector('#cards');
+const gridButton = document.getElementById('grid');
+const listButton = document.getElementById('list');
 
 const displayDirectory = (businesses) => {
     businesses.forEach((business) => {
@@ -37,9 +39,6 @@ async function getDirectoryData() {
     displayDirectory(data.businesses);
 }
 getDirectoryData();
-
-const gridButton = document.getElementById('grid');
-const listButton = document.getElementById('list');
 
 gridButton.addEventListener('click', () => {
     cards.classList.add('grid-view');

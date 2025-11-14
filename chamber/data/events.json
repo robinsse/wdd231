@@ -1,0 +1,25 @@
+{
+    "events": [
+        {
+            "title": "ROSS Grand Opening",
+            "description": "50% off total for the first 100 customers",
+            "date": "Saturday, October 11, 2025",
+            "time": "9am",
+            "location": "125 Valley River Drive"
+        },
+        {
+            "title": "Olive Garden Ground Breaking",
+            "description": "Ribbon-cutting Ceremony & Free Zuppa Toscana",
+            "date": "Saturday, October 18, 2025",
+            "time": "10am",
+            "location": "125 Valley River Drive"
+        },
+        {
+            "title": "City Planning Meeting",
+            "description": "Submit your Business Ideas",
+            "date": "Thursday, Nov 20, 2025",
+            "time": "6:30pm",
+            "location": "35 N 1st E"
+        }
+    ]
+}

@@ -3,7 +3,8 @@
     header,
     main,
     nav,
-    footer {
+    footer,
+    .hero img {
         max-width: 900px;
         margin: 0 auto;
     }
@@ -47,6 +48,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 20px;
+    }
+
+    .events-weather {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 20px;
     }
 
 }
