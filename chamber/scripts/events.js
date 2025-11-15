@@ -4,7 +4,7 @@ const eventsContainer = document.querySelector('#events');
 const displayEvents = (eventsData) => {
     eventsData.forEach((item) => {
         let event = document.createElement('section');
-        let title = document.createElement('p');
+        let title = document.createElement('h3');
         let description = document.createElement('p');
         let dateTime = document.createElement('p');
         let location = document.createElement('p');
