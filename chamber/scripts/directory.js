@@ -1,57 +1,63 @@
 const url = 'https://robinsse.github.io/wdd231/chamber/data/members.json';
+
+export function createBusinessCard(business) {
+    const card = document.createElement('section');
+
+    const name = document.createElement('h3');
+    name.textContent = business.name;
+
+    const address = document.createElement('p');
+    address.textContent = `Address: ${business.address}`;
+
+    const phone = document.createElement('p');
+    phone.textContent = `Phone: ${business.phone}`;
+
+    const website = document.createElement('a');
+    website.textContent = business.website
+    website.setAttribute('href', business.website);
+
+    const logo = document.createElement('img');
+    logo.setAttribute('src', business.logo);
+    logo.setAttribute('alt', `Logo of ${business.name}`);
+    logo.setAttribute('loading', 'lazy');
+    logo.setAttribute('width', '200');
+    logo.setAttribute('height', '200');
+
+    card.append(name, address, phone, website, logo);
+    return card;
+}
+
+export function displayDirectory(businesses, container) {
+    container.innerHTML = '';
+    businesses.forEach(b => container.appendChild(createBusinessCard(b)));
+}
+
+export async function getDirectoryData() {
+    const response = await fetch(url);
+    return response.json();
+}
+
 const cards = document.querySelector('#cards');
 const gridButton = document.getElementById('grid');
 const listButton = document.getElementById('list');
 
-const displayDirectory = (businesses) => {
-    businesses.forEach((business) => {
-        let card = document.createElement('section');
-        let name = document.createElement('h3');
-        let address = document.createElement('p');
-        let phone = document.createElement('p');
-        let website = document.createElement('a');
-        let logo = document.createElement('img');
+if (cards && gridButton && listButton) {
+    (async () => {
+        const data = await getDirectoryData();
+        displayDirectory(data.businesses, cards);
 
-        name.textContent = business.name;
-        address.textContent = `Address: ${business.address}`;
-        phone.textContent = `Phone: ${business.phone}`;
-        website.textContent = business.website;
-        website.setAttribute('href', business.website);
-        logo.setAttribute('src', business.logo);
-        logo.setAttribute('alt', `Logo of ${business.name}`);
-        logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '200');
-        logo.setAttribute('height', '200');
+        gridButton.addEventListener('click', () => {
+            cards.classList.add('grid-view');
+            cards.classList.remove('list-view');
+            gridButton.classList.add('active');
+            listButton.classList.remove('active');
+        });
 
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
-        card.appendChild(logo);
-        cards.appendChild(card);
-    });
+        listButton.addEventListener('click', () => {
+            cards.classList.add('list-view');
+            cards.classList.remove('grid-view');
+            listButton.classList.add('active');
+            gridButton.classList.remove('active');
+        });
+    })();
 }
-
-async function getDirectoryData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    //console.table(data.companies);
-    displayDirectory(data.businesses);
-}
-getDirectoryData();
-
-gridButton.addEventListener('click', () => {
-    cards.classList.add('grid-view');
-    cards.classList.remove('list-view');
-    gridButton.classList.add('active');
-    listButton.classList.remove('active');
-});
-
-listButton.addEventListener('click', () => {
-    cards.classList.add('list-view');
-    cards.classList.remove('grid-view');
-    listButton.classList.add('active');
-    gridButton.classList.remove('active');
-});
-
-export { displayDirectory, getDirectoryData };

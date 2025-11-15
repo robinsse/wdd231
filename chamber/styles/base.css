@@ -179,3 +179,8 @@ footer {
 .list-view img {
     display: none;
 }
+
+.events section {
+    background-color: #fff;
+    padding-bottom: 10px;
+}
