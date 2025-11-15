@@ -53,7 +53,11 @@
     <main>
         <h2>Home</h2>
         <div class="hero">
-            <img src="images/hero-image.webp" alt="Hemming Village">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Hemming Village" width="500">
+            </picture>
         </div>
         <h2>Events</h2>
         <div id="events" class="events"></div>

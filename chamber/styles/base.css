@@ -160,6 +160,8 @@ footer {
     display: flex;
 }
 
+/*DIRECTORY*/
+
 .toggle button {
     background-color: var(--acceent-color-2);
     font-family: var(--font-family-2);
@@ -178,6 +180,14 @@ footer {
 
 .list-view img {
     display: none;
+}
+
+/*INDEX*/
+
+.hero img {
+    width: 100%;
+    height: auto;
+
 }
 
 .weather {

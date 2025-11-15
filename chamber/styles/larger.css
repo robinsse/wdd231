@@ -3,8 +3,7 @@
     header,
     main,
     nav,
-    footer,
-    .hero img {
+    footer {
         max-width: 900px;
         margin: 0 auto;
     }
