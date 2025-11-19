@@ -1,7 +1,6 @@
-import { courses } from "./courses.js";
 import { showCourseDetails } from "./modal.js";
 
-function createCourseCard(courses) {
+export function createCourseCard(courses) {
     const gallery = document.querySelector(".container");
     gallery.innerHTML = "";
 
@@ -17,19 +16,20 @@ function createCourseCard(courses) {
                 showCourseDetails(course);
             })
         }
+
         else {
             card.textContent = `✓ ${course.subject} ${course.number}`;
             card.style.backgroundColor = "#eee";
             card.style.color = "#444444";
             gallery.appendChild(card);
             card.addEventListener("click", () => {
-                showCourseDetails(course);
-            })
+                showCourseDetails(course)
+            });
         }
     })
-};
+}
 
-function updateTotalCredits(courses) {
+export function updateTotalCredits(courses) {
     const creditsRequired = document.querySelector('.credits');
     let totalCredits = courses.reduce((total, course) => total + course.credits, 0);
     creditsRequired.innerHTML = `<strong>Total Credits Required:</strong> ${totalCredits}`;

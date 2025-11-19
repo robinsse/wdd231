@@ -9,12 +9,12 @@ export function showCourseDetails(course) {
     let description = document.createElement('p');
     let technology = document.createElement('p');
 
-    title.textContent = `${courses.subject} ${courses.number}`;
-    name.textContent = `${courses.title}`;
-    credits.textContent = `Credits: ${courses.credits}`;
-    certificate.textContent = `Certificate: ${courses.certificate}`;
-    description.textContent = `Description: ${courses.description}`;
-    technology.textContent = `Technology: ${courses.technology}`;
+    title.textContent = `${course.subject} ${course.number}`;
+    name.textContent = `${course.title}`;
+    credits.textContent = `Credits: ${course.credits}`;
+    certificate.textContent = `Certificate: ${course.certificate}`;
+    description.textContent = `Description: ${course.description}`;
+    technology.textContent = `Technology: ${course.technology}`;
 
     let close = document.createElement('button');
     close.className = "close-button";

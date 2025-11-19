@@ -1,3 +1,6 @@
+import { courses } from "./courses.js";
+import { createCourseCard, updateTotalCredits } from "./course-cards.js";
+
 const container = document.querySelector('.container');
 const allBtn = document.querySelector('#all');
 const cseBtn = document.querySelector('#cse');
