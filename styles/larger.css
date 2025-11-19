@@ -27,9 +27,3 @@ header {
 .navigation a {
     border: none;
 }
-
-.filter-btns button:hover {
-    background-color: var(--accent-color-1);
-    color: var(--secondary-color);
-    cursor: pointer;
-}

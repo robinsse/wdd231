@@ -119,6 +119,12 @@ section img {
     color: var(--accent-color-2)
 }
 
+.filter-btns button:hover {
+    background-color: var(--accent-color-1);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
 .credits {
     text-align: center;
     margin: 15px 0;
@@ -135,6 +141,12 @@ section img {
 .container button {
     font-family: var(--font-family-2);
     color: var(--secondary-color);
+}
+
+.container button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent-color-1);
+    cursor: pointer;
 }
 
 footer {
@@ -155,4 +167,21 @@ footer {
     width: 44px;
     height: 44px;
     display: flex;
+}
+
+dialog {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    background-color: var(--accent-color-1);
+    width: 25%;
+}
+
+::backdrop {
+    background-color: rgb (0 0 0 / 50%);
+}
+
+dialog button {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--accent-color-2);
 }

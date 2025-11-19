@@ -18,9 +18,11 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
-    <script src="scripts/courses.js" defer></script>
     <script src="scripts/course-cards.js" defer></script>
     <script src="scripts/filter-buttons.js" defer></script>
+
+    <script type="module" src="scripts/courses.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,6 +79,7 @@
             <div class="credits"></div>
             <div class="container"></div>
         </section>
+        <dialog id="course-details" class="course-details"></dialog>
     </main>
     <footer>
         <div class="social">
