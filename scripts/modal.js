@@ -10,7 +10,7 @@ export function showCourseDetails(course) {
     let technology = document.createElement('p');
 
     title.textContent = `${course.subject} ${course.number}`;
-    name.textContent = `${course.title}`;
+    name.textContent = `Name: ${course.title}`;
     credits.textContent = `Credits: ${course.credits}`;
     certificate.textContent = `Certificate: ${course.certificate}`;
     description.textContent = `Description: ${course.description}`;

@@ -27,3 +27,7 @@ header {
 .navigation a {
     border: none;
 }
+
+dialog {
+    width: 25%;
+}

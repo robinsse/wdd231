@@ -5,28 +5,15 @@ export function createCourseCard(courses) {
     gallery.innerHTML = "";
 
     courses.forEach(course => {
-        let card = document.createElement("button");
+        const card = document.createElement("button");
         card.className = "course-button";
-        if (!course.completed) {
-            card.textContent = `${course.subject} ${course.number}`;
-            card.style.backgroundColor = "#800";
-            card.style.color = "#fff";
-            gallery.appendChild(card);
-            card.addEventListener("click", () => {
-                showCourseDetails(course);
-            })
-        }
 
-        else {
-            card.textContent = `✓ ${course.subject} ${course.number}`;
-            card.style.backgroundColor = "#eee";
-            card.style.color = "#444444";
-            gallery.appendChild(card);
-            card.addEventListener("click", () => {
-                showCourseDetails(course)
-            });
-        }
-    })
+        card.classList.add(course.completed ? "completed" : "incomplete");
+
+        card.textContent = `${course.completed ? "✓ " : ""}${course.subject} ${course.number}`;
+        card.addEventListener("click", () => showCourseDetails(course));
+        gallery.appendChild(card);
+    });
 }
 
 export function updateTotalCredits(courses) {

@@ -136,14 +136,20 @@ section img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
+    font-family: var(--font-family-2);
 }
 
-.container button {
-    font-family: var(--font-family-2);
+.course-button.complete {
+    background-color: var(--accent-color-2);
     color: var(--secondary-color);
 }
 
-.container button:hover {
+.course-button.incomplete {
+    background-color: var(--primary-color);
+    color: var(--accent-color-2)
+}
+
+.course-button:hover {
     background-color: var(--secondary-color);
     color: var(--accent-color-1);
     cursor: pointer;
@@ -171,17 +177,24 @@ footer {
 
 dialog {
     border: 1px solid var(--secondary-color);
-    padding: 1rem;
+    padding: 3rem;
     background-color: var(--accent-color-1);
-    width: 25%;
+    width: 50%;
+}
+
+dialog h3 {
+    text-align: center;
+    font-family: var(--font-family-1);
 }
 
 ::backdrop {
-    background-color: rgb (0 0 0 / 50%);
+    background-color: rgb(0 0 0 / 50%);
 }
 
 dialog button {
-    padding: 1rem;
+    padding: 0.5rem;
     background-color: var(--primary-color);
     color: var(--accent-color-2);
+    display: block;
+    margin: 0 auto;
 }
