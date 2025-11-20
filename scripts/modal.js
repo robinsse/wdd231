@@ -14,7 +14,7 @@ export function showCourseDetails(course) {
     credits.textContent = `Credits: ${course.credits}`;
     certificate.textContent = `Certificate: ${course.certificate}`;
     description.textContent = `Description: ${course.description}`;
-    technology.textContent = `Technology: ${course.technology}`;
+    technology.textContent = `Technology: ${course.technology.join(', ')}`;
 
     let close = document.createElement('button');
     close.className = "close-button";
