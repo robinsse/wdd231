@@ -1,8 +1,10 @@
 import { memberships } from "./memberships.js";
 import { showMembershipDetails } from "./modal.js";
 
-document.getElementById('form').addEventListener('submit', () =>
-    document.getElementById('timestamp').value = new Date().toLocaleString());
+document.getElementById('form').addEventListener('submit', () => {
+    const ts = document.getElementById('timestamp')
+    if (ts) ts.value = new Date().toLocaleString();
+});
 
 function createMembershipCards() {
     const gallery = document.querySelector("#cards");

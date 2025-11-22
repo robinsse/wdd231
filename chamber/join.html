@@ -54,63 +54,63 @@
     <main>
         <h2>Join</h2>
         <div class="join">
-        <form method="GET" action="thankyou.html" id="form" class="form">
-            <label>
-                First Name
-                <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
-            </label>
-            <label>
-                Last Name
-                <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
-            </label>
-            <label>
-                Organizational Title
-                <input type="text" name="org-title" autocomplete="organization-title" title="Your First Name"
-                    pattern="^[A-Za-z\s\-]{7,}$">
-            </label>
-            <label>
-                Email
-                <input type="email" name="email" required autocomplete="email" title="Your Email">
-            </label>
-            <label>
-                Mobile Phone
-                <input type="tel" name="phone" required autocomplete="mobile" title="Your Mobile Phone">
-            </label>
-            <label>
-                Business/Organization Name
-                <input type="text" name="business" required autocomplete="organization" title="Your Organization">
-            </label>
-            <h3>Membership Level</h3>
-            <label>
-                <input type="radio" name="membership" value="np">
-                Non-profit Membership
-            </label>
-            <label>
-                <input type="radio" name="membership" value="bronze">
-                Bronze Membership
-            </label>
-            <label>
-                <input type="radio" name="membership" value="silver">
-                Silver Membership
-            </label>
-            <label>
-                <input type="radio" name="membership" value="gold">
-                Gold Membership
-            </label>
-            <label class="description">
-                Business/Organization Description
-                <textarea name="description" title="Description of Your Business/Organization"></textarea>
-            </label>
-            <label>
-                <input type="hidden" name="timestamp" id="timestamp">
-            </label>
-            <input type="submit" value="Join the Chamber">
-        </form>
-        <aside id="cards" class="cards"></aside>
-        <dialog id="membership-details"></dialog>
+            <form method="GET" action="thankyou.html" id="form" class="form">
+                <label>
+                    First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
+                <label>
+                    Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
+                <label>
+                    Organizational Title
+                    <input type="text" name="org-title" autocomplete="organization-title" title="Your First Name"
+                        pattern="^[A-Za-z\s\-]{7,}$">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required autocomplete="email" title="Your Email"
+                        placeholder="name@example.com">
+                </label>
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="phone" required autocomplete="tel-national" title="Your Mobile Phone">
+                </label>
+                <label>
+                    Business/Organization Name
+                    <input type="text" name="business" required autocomplete="organization" title="Your Organization">
+                </label>
+                <h3>Membership Level</h3>
+                <label>
+                    <input type="radio" name="membership" value="np">
+                    Non-profit Membership
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="bronze">
+                    Bronze Membership
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="silver">
+                    Silver Membership
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="gold">
+                    Gold Membership
+                </label>
+                <label class="description">
+                    Business/Organization Description
+                    <textarea name="description" title="Description of Your Business/Organization"></textarea>
+                </label>
+                <label>
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
+                </label>
+                <input type="submit" value="Join the Chamber">
+            </form>
+            <aside id="cards" class="cards"></aside>
+            <dialog id="membership-details"></dialog>
         </div>
     </main>
-    </div>
     <footer>
         <p>Rexburg Chamber of Commerce</p>
         <p>1234 Main Street</p>
