@@ -208,3 +208,59 @@ footer {
 .events section {
     padding-bottom: 10px;
 }
+
+form {
+    padding-left: 25px;
+}
+
+form label {
+    display: block;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+}
+
+form input:not([type="radio"]) {
+    display: block;
+    width: 90%
+}
+
+.description {
+    padding-top: 15px;
+}
+
+form h3 {
+    color: var(--secondary-color);
+    font-size: var(--font-family-1);
+}
+
+form input[type="submit"] {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2)
+}
+
+aside {
+    text-align: center;
+}
+
+aside h3 {
+    background-color: var(--accent-color-2);
+    color: var(--secondary-color)
+}
+
+aside button {
+    background-color: var(--primary-color);
+    color: var(--accent-color-2);
+    margin-bottom: 10px;
+}
+
+dialog {
+    font-family: var(--font-family-2);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.close-button {
+    background-color: var(--secondary-color);
+    color: var(--accent-color-2);
+}

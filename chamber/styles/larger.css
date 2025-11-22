@@ -61,4 +61,10 @@
         gap: 20px;
     }
 
+    main { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding-bottom: 25px;
+    }
 }
