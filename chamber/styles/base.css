@@ -276,3 +276,7 @@ dialog {
     background-color: var(--secondary-color);
     color: var(--accent-color-2);
 }
+
+#results {
+    padding-left: 25px;
+}
