@@ -50,8 +50,10 @@
             <li class="current"><a href="join.html">Join</a></li>
         </ul>
     </nav>
-    <h2>Join</h2>
+
     <main>
+        <h2>Join</h2>
+        <div class="join">
         <form method="GET" action="thankyou.html" id="form" class="form">
             <label>
                 First Name
@@ -97,7 +99,7 @@
             </label>
             <label class="description">
                 Business/Organization Description
-                <input type="textarea" name="description" title="Description of Your Business/Organization">
+                <textarea name="description" title="Description of Your Business/Organization"></textarea>
             </label>
             <label>
                 <input type="hidden" name="timestamp" id="timestamp">
@@ -106,8 +108,9 @@
         </form>
         <aside id="cards" class="cards"></aside>
         <dialog id="membership-details"></dialog>
+        </div>
     </main>
-
+    </div>
     <footer>
         <p>Rexburg Chamber of Commerce</p>
         <p>1234 Main Street</p>

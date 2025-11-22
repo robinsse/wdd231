@@ -219,7 +219,8 @@ form label {
     padding-bottom: 1rem;
 }
 
-form input:not([type="radio"]) {
+form input:not([type="radio"]),
+form textarea {
     display: block;
     width: 90%
 }
