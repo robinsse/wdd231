@@ -280,3 +280,10 @@ dialog {
 #results {
     padding-left: 25px;
 }
+
+.todo div {
+    border: 1px solid var(--secondary-color);
+    margin: 10px 10px;
+    background-color: var(--accent-color-2);
+    padding: 10px;
+}

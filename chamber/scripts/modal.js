@@ -1,4 +1,4 @@
-import { memberships } from "./memberships.js";
+import { memberships } from "../data/memberships.mjs";
 
 export function showMembershipDetails(membership) {
     const modal = document.querySelector('#membership-details');

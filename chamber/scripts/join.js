@@ -1,4 +1,4 @@
-import { memberships } from "./memberships.js";
+import { memberships } from "../data/memberships.mjs";
 import { showMembershipDetails } from "./modal.js";
 
 document.getElementById('form').addEventListener('submit', () => {
