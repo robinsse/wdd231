@@ -1,10 +1,11 @@
-@media (min-width: 700px) {
+@media only screen and (min-width: 64rem) {
 
     header,
     main,
     nav,
-    footer {
-        max-width: 900px;
+    footer,
+    .discover {
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -66,5 +67,19 @@
         grid-template-columns: 1fr 1fr;
         gap: 25px;
         padding-bottom: 25px;
+    }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        row-gap: 1.5rem;
+        max-width: 1160px;
+    }
+
+    .thecard {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
     }
 }

@@ -281,9 +281,40 @@ dialog {
     padding-left: 25px;
 }
 
-.todo div {
+.thecard {
     border: 1px solid var(--secondary-color);
-    margin: 10px 10px;
+    margin: 20px;
     background-color: var(--accent-color-2);
-    padding: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+    "name"
+    "a"
+    "c"
+    "photo"
+    "d";
+}
+
+.thecard h2 {
+    grid-area: name;
+}
+
+.thecard img {
+    width: 100%;
+    grid-area: photo;
+}
+
+.thecard .d {
+    grid-area: d;
+}
+
+.thecard .a {
+    grid-area: a;
+}
+
+.thecard .c {
+    grid-area: c;
 }
