@@ -291,11 +291,11 @@ dialog {
 
     display: grid;
     grid-template-areas:
-    "name"
-    "a"
-    "c"
-    "photo"
-    "d";
+        "name"
+        "a"
+        "c"
+        "photo"
+        "d";
 }
 
 .thecard h2 {
@@ -319,6 +319,10 @@ dialog {
     grid-area: c;
 }
 
-.visits  {
+.visits {
     text-align: center;
+}
+
+.thecard:hover {
+    box-shadow: 0 0 50px #333;
 }
