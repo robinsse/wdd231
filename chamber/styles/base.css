@@ -318,3 +318,7 @@ dialog {
 .thecard .c {
     grid-area: c;
 }
+
+.visits  {
+    text-align: center;
+}
