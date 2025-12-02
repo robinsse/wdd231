@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Hawaii Travel Hub</title>
+    <meta name="description"
+        content="Home page for travel to the Hawaiian islands">
+    <meta name="author" content="Selena Robins">
+
+    <meta property="og:title" content="Hawaii Travel Hub Home">
+    <meta property="og:description" content="Explore home page for travel to the Hawaiian islands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://robinsse.github.io/project/index.html">
+    <meta property="og:image" content="https://robinsse.github.io/wdd231/project/images/og-image.webp">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
+    <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/forecast.js"></script>
+    <script type="module" src="scripts/events.js"></script>
+    <script type="module" src="scripts/featured.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Hawaii Travel Hub</h1>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false"
+            aria-controls="nav-bar"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li><a href="book.html">Book</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Home</h2>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Hemming Village" loading="lazy">
+            </picture>
+        </div>
+        <h2>Events</h2>
+        <div id="events" class="events"></div>
+        <h2>Weather</h2>
+        <div class="weather">
+            <div class="current-weather">
+                <h3>Current Weather</h3>
+                <img id="weather-icon" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                    alt="">
+                <p id="caption"></p>
+                <p id="weather-description"></p>
+                <p>Temperature: <span id="current-temp"></span> °F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+            </div>
+            <div class="forecast">
+                <h3>Forecast</h3>
+                <p>Today: <span id="today"></span></p>
+                <p id="today-weather"></p>
+                <p>Tomorrow: <span id="tomorrow"></span></p>
+                <p id="tomorrow-weather"></p>
+                <p>Day After: <span id="day-after"></span></p>
+                <p id="day-after-weather"></p>
+            </div>
+        </div>
+        <h2>Featured Businesses</h2>
+        <div id="featured" class="featured"></div>
+    </main>
+
+    <footer>
+        <p>Hawaii Travel Hub</p>
+        <p>1234 Main Street</p>
+        <p>Laie, HI 83440</p>
+        <p>info@hawaiitravelhub.com</p>
+        <p>(800) 555-1234</p>
+        <div class="social">
+            <a href="https://www.facebook.com/selenarobins"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/selenawingrobins/"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.google.com"><img src="images/google.svg" alt="Google"></a>
+        </div>
+        <p>WDD231 Class Project</p>
+        <p>Developed by Selena Robins</p>
+        <p>&copy; <span id="currentyear"></span> Hawaii Travel Hub</p>
+        <p id="lastModified">Last Modified: <span id="when"></span></p>
+    </footer>
+</body>
+
+</html>

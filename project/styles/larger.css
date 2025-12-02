@@ -1,0 +1,85 @@
+@media only screen and (min-width: 64rem) {
+
+    header,
+    main,
+    nav,
+    footer,
+    .discover {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .filter-btns button:hover {
+        background-color: var(--accent-color-1);
+        color: var(--secondary-color);
+        cursor: pointer;
+    }
+
+    .grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    .list-view section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 20px;
+    }
+
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .featured {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .join { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding-bottom: 25px;
+    }
+
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4rem;
+        row-gap: 1.5rem;
+        max-width: 1160px;
+    }
+
+    .thecard {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+    }
+}

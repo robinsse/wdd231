@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Hawaii Travel Hub</title>
+    <meta name="description" content="Home page for travel to the Hawaiian islands">
+    <meta name="author" content="Selena Robins">
+    
+    <meta property="og:title" content="Hawaii Travel Hub Home">
+    <meta property="og:description" content="Explore home page for travel to the Hawaiian islands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://robinsse.github.io/project/index.html">
+    <meta property="og:image" content="https://robinsse.github.io/wdd231/project/images/og-image.webp">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
+    <script type="module" src="scripts/join.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
+    <script type="module" src="./data/memberships.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rexburg Chamber of Commerce</h1>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false"
+            aria-controls="nav-bar"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="hotels.html">Hotels</a></li>
+            <li class="current"><a href="book.html">Book</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Join</h2>
+        <div class="join">
+            <form method="GET" action="thankyou.html" id="form" class="form">
+                <label>
+                    First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
+                <label>
+                    Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
+                <label>
+                    Organizational Title
+                    <input type="text" name="org-title" autocomplete="organization-title" title="Your First Name"
+                        pattern="^[A-Za-z\s\-]{7,}$">
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" required autocomplete="email" title="Your Email"
+                        placeholder="name@example.com">
+                </label>
+                <label>
+                    Mobile Phone
+                    <input type="tel" name="phone" required autocomplete="tel" title="Your Mobile Phone">
+                </label>
+                <label>
+                    Business/Organization Name
+                    <input type="text" name="business" required autocomplete="organization" title="Your Organization">
+                </label>
+                <h3>Membership Level</h3>
+                <label>
+                    <input type="radio" name="membership" value="np">
+                    Non-profit Membership
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="bronze">
+                    Bronze Membership
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="silver">
+                    Silver Membership
+                </label>
+                <label>
+                    <input type="radio" name="membership" value="gold">
+                    Gold Membership
+                </label>
+                <label class="description">
+                    Business/Organization Description
+                    <textarea name="description" title="Description of Your Business/Organization"></textarea>
+                </label>
+                <label>
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
+                </label>
+                <input type="submit" value="Join the Chamber">
+            </form>
+            <aside id="cards" class="cards"></aside>
+            <dialog id="membership-details"></dialog>
+        </div>
+    </main>
+    <footer>
+        <p>Hawaii Travel Hub</p>
+        <p>1234 Main Street</p>
+        <p>Laie, HI 83440</p>
+        <p>info@hawaiitravelhub.com</p>
+        <p>(800) 555-1234</p>
+        <div class="social">
+            <a href="https://www.facebook.com/selenarobins"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/selenawingrobins/"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.google.com"><img src="images/google.svg" alt="Google"></a>
+        </div>
+        <p>WDD231 Class Project</p>
+        <p>Developed by Selena Robins</p>
+        <p>&copy; <span id="currentyear"></span> Hawaii Travel Hub</p>
+        <p id="lastModified">Last Modified: <span id="when"></span></p>
+    </footer>
+</body>
+
+</html>

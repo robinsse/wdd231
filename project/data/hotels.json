@@ -1,0 +1,100 @@
+{
+    "hotels": [
+        {
+            "name": "Hilton Hawaiian Village Waikiki Beach Resort",
+            "address": "2005 K\u0101lia Rd, Honolulu, HI 96815",
+            "phone": "(808) 949-4321",
+            "website": "https://www.hiltonhawaiianvillage.com",
+            "image": "images/hiltonhawaiianvillage.webp",
+            "rating": 4
+        },
+        {
+            "name": "Moana Surfrider, A Westin Resort & Spa",
+            "address": "2365 Kal\u0101kaua Ave, Honolulu, HI 96815",
+            "phone": "(808) 922-3111",
+            "website": "https://www.marriott.com",
+            "image": "images/moanasurfrider.webp",
+            "rating": 4
+        },
+        {
+            "name": "The Royal Hawaiian",
+            "address": "2259 Kal\u0101kaua Ave, Honolulu, HI 96815",
+            "phone": "(808) 923-7311",
+            "website": "https://www.royal-hawaiian.com",
+            "image": "images/royalhawaiian.webp",
+            "rating": 5
+        },
+        {
+            "name": "Grand Wailea, A Waldorf Astoria Resort",
+            "address": "3850 Wailea Alanui Dr, Wailea, HI 96753",
+            "phone": "(808) 875-1234",
+            "website": "https://www.grandwailea.com",
+            "image": "images/grandwailea.webp",
+            "rating": 5
+        },
+        {
+            "name": "The Westin Maui Resort & Spa",
+            "address": "2365 Kaanapali Pkwy, Lahaina, HI 96761",
+            "phone": "(808) 667-2525",
+            "website": "https://www.marriott.com",
+            "image": "images/westinmaui.webp",
+            "rating": 4
+        },
+        {
+            "name": "Hyatt Regency Maui Resort & Spa",
+            "address": "200 Nohea Kai Dr, Lahaina, HI 96761",
+            "phone": "(808) 661-1234",
+            "website": "https://www.hyatt.com",
+            "image": "images/hyattregencymaui.webp",
+            "rating": 4
+        },
+        {
+            "name": "Mauna Kea Beach Hotel",
+            "address": "62-100 Mauna Kea Beach Dr, Waimea, HI 96743",
+            "phone": "(808) 882-7222",
+            "website": "https://www.maunakeabeachhotel.com",
+            "image": "images/maunakea.webp",
+            "rating": 5
+        },
+        {
+            "name": "Hilton Waikoloa Village",
+            "address": "69-425 Waikoloa Beach Dr, Waikoloa Village, HI 96738",
+            "phone": "(808) 886-1234",
+            "website": "https://www.hiltonwaikoloavillage.com",
+            "image": "images/hiltonwaikoloa.webp",
+            "rating": 4
+        },
+        {
+            "name": "Sheraton Kona Resort & Spa",
+            "address": "78-128 Ehukai St, Kailua-Kona, HI 96740",
+            "phone": "(808) 930-4900",
+            "website": "https://www.marriott.com",
+            "image": "images/sheratonkona.webp",
+            "rating": 4
+        },
+        {
+            "name": "Grand Hyatt Kauai Resort & Spa",
+            "address": "1571 Poipu Rd, Koloa, HI 96756",
+            "phone": "(808) 742-1234",
+            "website": "https://www.hyatt.com",
+            "image": "images/grandhyattkauai.webp",
+            "rating": 5
+        },
+        {
+            "name": "Kauai Beach Resort & Spa",
+            "address": "4331 Kauai Beach Dr, Lihue, HI 96766",
+            "phone": "(808) 245-1955",
+            "website": "https://www.kauaibeachresorthawaii.com",
+            "image": "images/kauaibeach.webp",
+            "rating": 4
+        },
+        {
+            "name": "Princeville Resort Kauai",
+            "address": "5520 Ka Haku Rd, Princeville, HI 96722",
+            "phone": "(808) 826-9644",
+            "website": "https://www.princeville.com",
+            "image": "images/princeville.webp",
+            "rating": 5
+        }
+    ]
+}

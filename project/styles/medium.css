@@ -1,0 +1,14 @@
+@media only screen and (min-width: 38rem) {
+
+    .thecard {
+        grid-template-areas:
+            "name photo"
+            "a photo"
+            "c photo"
+            "d photo";
+        }
+    
+    .thecard img {
+        margin: 10px;
+    }
+}
