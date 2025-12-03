@@ -1,27 +1,27 @@
-import { memberships } from "../data/memberships.mjs";
-import { showMembershipDetails } from "./modal.js";
+import { ratings } from "../data/ratings.mjs";
+import { showRatingDetails } from "./modal.js";
 
 document.getElementById('form').addEventListener('submit', () => {
     const ts = document.getElementById('timestamp')
     if (ts) ts.value = new Date().toLocaleString();
 });
 
-function createMembershipCards() {
+function createRatingCards() {
     const gallery = document.querySelector("#cards");
     gallery.innerHTML = "";
 
-    memberships.forEach(membership => {
+    ratings.forEach(rating => {
         const card = document.createElement("section");
         const name = document.createElement('h3');
-        name.textContent = membership.title;
+        name.textContent = rating.title;
         const details = document.createElement("button");
         details.className = "details";
         details.textContent = "See details"
-        details.addEventListener("click", () => showMembershipDetails(membership));
+        details.addEventListener("click", () => showRatingDetails(rating));
         card.append(name, details);
         gallery.append(card);
     });
 }
 
-createMembershipCards();
+createRatingCards();
 

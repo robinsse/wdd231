@@ -7,7 +7,7 @@
     <title>Home | Hawaii Travel Hub</title>
     <meta name="description" content="Home page for travel to the Hawaiian islands">
     <meta name="author" content="Selena Robins">
-    
+
     <meta property="og:title" content="Hawaii Travel Hub Home">
     <meta property="og:description" content="Explore home page for travel to the Hawaiian islands.">
     <meta property="og:type" content="website">
@@ -22,20 +22,21 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
         rel="stylesheet">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
 
-    <script type="module" src="scripts/join.js"></script>
+    <script type="module" src="scripts/book.js"></script>
     <script type="module" src="scripts/modal.js"></script>
-    <script type="module" src="./data/memberships.mjs"></script>
+    <script type="module" src="./data/ratings.mjs"></script>
 </head>
 
 <body>
     <header>
-        <h1>Rexburg Chamber of Commerce</h1>
+        <h1>🌺 Hawaii Travel Hub</h1>
         <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false"
             aria-controls="nav-bar"></button>
     </header>
@@ -50,9 +51,11 @@
     </nav>
 
     <main>
-        <h2>Join</h2>
+        <h2>Book with a Travel Agent</h2>
         <div class="join">
             <form method="GET" action="thankyou.html" id="form" class="form">
+                <p>Fill out the form below to get in touch with one of our travel agents. They will contact you with a
+                    list of package options based on your selections below.</p>
                 <label>
                     First Name
                     <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
@@ -60,11 +63,6 @@
                 <label>
                     Last Name
                     <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
-                </label>
-                <label>
-                    Organizational Title
-                    <input type="text" name="org-title" autocomplete="organization-title" title="Your First Name"
-                        pattern="^[A-Za-z\s\-]{7,}$">
                 </label>
                 <label>
                     Email
@@ -76,37 +74,41 @@
                     <input type="tel" name="phone" required autocomplete="tel" title="Your Mobile Phone">
                 </label>
                 <label>
-                    Business/Organization Name
-                    <input type="text" name="business" required autocomplete="organization" title="Your Organization">
+                    Desired Island(s)
+                    <input type="text" name="islands" required title="Your Island Preferences">
                 </label>
-                <h3>Membership Level</h3>
+                <h3>Hotel Rating Preference</h3>
                 <label>
-                    <input type="radio" name="membership" value="np">
-                    Non-profit Membership
-                </label>
-                <label>
-                    <input type="radio" name="membership" value="bronze">
-                    Bronze Membership
+                    <input type="radio" name="stars" value="5">
+                    ★★★★★
                 </label>
                 <label>
-                    <input type="radio" name="membership" value="silver">
-                    Silver Membership
+                    <input type="radio" name="stars" value="4">
+                    ★★★★
                 </label>
                 <label>
-                    <input type="radio" name="membership" value="gold">
-                    Gold Membership
+                    <input type="radio" name="stars" value="3">
+                    ★★★
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="2">
+                    ★★
+                </label>
+                <label>
+                    <input type="radio" name="stars" value="1">
+                    ★
                 </label>
                 <label class="description">
-                    Business/Organization Description
-                    <textarea name="description" title="Description of Your Business/Organization"></textarea>
+                    Desired Activities
+                    <textarea name="description" title="Desired Activities"></textarea>
                 </label>
                 <label>
                     <input type="hidden" name="timestamp" id="timestamp" value="">
                 </label>
-                <input type="submit" value="Join the Chamber">
+                <input type="submit" value="Book Now">
             </form>
             <aside id="cards" class="cards"></aside>
-            <dialog id="membership-details"></dialog>
+            <dialog id="rating-details"></dialog>
         </div>
     </main>
     <footer>

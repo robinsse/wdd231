@@ -24,7 +24,8 @@ export function createHotelCard(hotel) {
     image.setAttribute('height', '200');
 
     const rating = document.createElement('p');
-    rating.textContent = `Rating: ${hotel.rating} stars`;
+    const stars = '★'.repeat(hotel.rating) + '☆'.repeat(5 - hotel.rating);
+    rating.textContent = stars;
 
     card.append(name, address, phone, website, rating, image);
     return card;

@@ -1,22 +1,22 @@
-import { memberships } from "../data/memberships.mjs";
+import { ratings } from "../data/ratings.mjs";
 
-export function showMembershipDetails(membership) {
-    const modal = document.querySelector('#membership-details');
+export function showRatingDetails(rating) {
+    const modal = document.querySelector('#rating-details');
     modal.innerHTML = '';
 
     let title = document.createElement('h3');
-    let cost = document.createElement('p');
-    let benefits = document.createElement('p');
+    let description = document.createElement('p');
+    let scenarios = document.createElement('p');
 
-    title.textContent = membership.title;
-    cost.textContent = `Cost: $${membership.cost}`;
-    benefits.textContent = `Benefits: ${membership.benefits}`;
+    title.textContent = rating.title;
+    description.textContent = `Description: ${rating.description}`;
+    scenarios.textContent = `Best for: ${rating.scenarios}`;
 
     let close = document.createElement('button');
     close.className = "close-button";
     close.textContent = "Close";
     close.addEventListener("click", () => modal.close());
 
-    modal.append(title, cost, benefits, close);
+    modal.append(title, description, scenarios, close);
     modal.showModal();
 }
