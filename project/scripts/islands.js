@@ -38,6 +38,9 @@ const displayIslands = (islandsData) => {
         let title = document.createElement('h3');
         let description = document.createElement('p');
         let image = document.createElement('img');
+        image.setAttribute('src', item.image);
+        image.setAttribute('alt', `Image of ${item.title}`);
+        image.setAttribute('loading', 'lazy');
 
         const weatherDiv = document.createElement('div');
         weatherDiv.classList.add('weather-info');
@@ -54,13 +57,9 @@ const displayIslands = (islandsData) => {
 
         island.appendChild(title);
         island.appendChild(description);
-        island.appendChild(image);
         island.appendChild(weatherDiv);
 
-        image.setAttribute('src', item.image);
-        image.setAttribute('alt', `Image of ${item.title}`);
-        image.setAttribute('loading', 'lazy');
-
+        weatherDiv.appendChild(image);
         weatherDiv.appendChild(weatherTitle);
         weatherDiv.appendChild(temp);
         weatherDiv.appendChild(icon);

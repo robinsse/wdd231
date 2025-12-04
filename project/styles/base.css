@@ -228,7 +228,7 @@ footer {
     display: flex;
     flex-direction: column;
 }
-.weather-info {
+.weather-info, .island-image {
     margin-top: auto;
 }
 
