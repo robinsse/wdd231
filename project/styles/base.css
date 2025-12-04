@@ -264,7 +264,7 @@ form h3 {
 
 form input[type="submit"] {
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--accent-color-2)
 }
 
@@ -289,7 +289,7 @@ aside h3 {
 }
 
 aside button {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--accent-color-2);
     margin-bottom: 10px;
 }
@@ -301,7 +301,7 @@ dialog {
 }
 
 .close-button {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--accent-color-2);
 }
 

@@ -77,6 +77,10 @@
                     Desired Island(s)
                     <input type="text" name="islands" required title="Your Island Preferences">
                 </label>
+                <label>
+                    Number of Travelers
+                    <input type="number" name="travelers" required title="Number of Travelers" min="1" max="20">
+                </label>
                 <h3>Hotel Rating Preference</h3>
                 <label>
                     <input type="radio" name="stars" value="5">
@@ -98,9 +102,9 @@
                     <input type="radio" name="stars" value="1">
                     ★
                 </label>
-                <label class="description">
+                <label class="activities">
                     Desired Activities
-                    <textarea name="description" title="Desired Activities"></textarea>
+                    <textarea name="activities" title="Desired Activities"></textarea>
                 </label>
                 <label>
                     <input type="hidden" name="timestamp" id="timestamp" value="">
