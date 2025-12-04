@@ -1,4 +1,4 @@
-const url = 'https://robinsse.github.io/wdd231/chamber/data/islands.json';
+const url = 'https://robinsse.github.io/wdd231/project/data/islands.json';
 const islandsContainer = document.querySelector('#islands');
 
 const displayIslands = (islandsData) => {
