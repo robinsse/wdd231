@@ -9,8 +9,8 @@ export function showRatingDetails(rating) {
     let scenarios = document.createElement('p');
 
     title.textContent = rating.title;
-    description.textContent = `Description: ${rating.description}`;
-    scenarios.textContent = `Best for: ${rating.scenarios}`;
+    description.innerHTML = `<strong>Description:</strong> ${rating.description}`;
+    scenarios.innerHTML = `<strong>Best for:</strong> ${rating.scenarios}`;
 
     let close = document.createElement('button');
     close.className = "close-button";
