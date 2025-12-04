@@ -1,27 +1,27 @@
 {
     "islands": [
         {
-            "island": "Oahu",
+            "title": "Oahu",
             "description": "Oahu is the most visited Hawaiian island and offers the perfect blend of city energy and natural beauty. Home to Honolulu and famous Waikiki Beach, it has the widest variety of dining, shopping, museums, and nightlife. Visitors also enjoy iconic outdoor attractions such as hiking Diamond Head, exploring the North Shore’s legendary surf breaks, and visiting the historic Pearl Harbor sites. Oahu is ideal for travelers who want convenience, lots of activity options, and a lively atmosphere."
         },
         {
-            "island": "Maui",
+            "title": "Maui",
             "description": "Maui is known for its romantic atmosphere, beautiful beaches, and upscale resorts, making it a favorite for couples and honeymooners. One of its biggest draws is the scenic Road to Hana, a lush drive filled with waterfalls and coastal viewpoints. Haleakala National Park offers dramatic volcanic landscapes and unforgettable sunrise views. With sunny resort areas like Wailea and Kaanapali, plus excellent whale watching in winter, Maui offers a perfect balance of relaxation and adventure."
         },
         {
-            "island": "Kauai",
+            "title": "Kauai",
             "description": "Kauai, often called the 'Garden Isle,' is the most lush and scenic of the major islands. It offers dramatic natural beauty—from the towering cliffs of the Na Pali Coast to the colorful depths of Waimea Canyon. Kauai has a quieter, more rural feel than Oahu or Maui, making it a great destination for travelers who want untouched nature, hiking, photography, and peaceful beaches. With its rainforests, waterfalls, and charming small towns like Hanalei, Kauai feels like a true escape."
         },
         {
-            "island": "Hawaii (Big Island)",
+            "title": "Hawaii (Big Island)",
             "description": "The Big Island is the largest and geologically most diverse Hawaiian island, offering everything from active volcanoes to black sand beaches and even snow-capped mountain peaks. Visitors flock to Hawaii Volcanoes National Park to see craters, lava landscapes, and steam vents, while Mauna Kea provides world-class stargazing. Kona’s sunny coastline offers great snorkeling and coffee farm tours, while Hilo features lush waterfalls and rainforests. This island is ideal for adventurers and those who want a wide range of landscapes to explore."
         },
         {
-            "island": "Lanai",
+            "title": "Lanai",
             "description": "Lanai is a quiet, remote island known for its exclusivity and peaceful atmosphere. Much of its tourism centers around luxury resorts, particularly the Four Seasons properties, making it a preferred destination for travelers seeking privacy and comfort. The island offers excellent snorkeling at Hulopoe Bay, rugged off-road trails, and unique landscapes like the otherworldly Garden of the Gods. It’s perfect for those who want a serene getaway with minimal crowds."
         },
         {
-            "island": "Molokai",
+            "title": "Molokai",
             "description": "Molokai is the least commercialized and most culturally rooted of the major islands. It offers visitors a glimpse of 'old Hawaii,' with rural scenery, quiet towns, and strong Native Hawaiian traditions. The island is home to the world’s tallest sea cliffs and the historic Kalaupapa National Historical Park. Outdoor activities include hiking, cultural tours, and enjoying nearly empty beaches like Papohaku. Molokai is best for travelers who want authenticity, simplicity, and a deep connection to Hawaiian culture."
         }
     ]

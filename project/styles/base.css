@@ -233,8 +233,13 @@ footer {
     text-align: center;
 }
 
-.events section {
+.islands section {
     padding-bottom: 10px;
+}
+
+.islands section p {
+    text-align: justify;
+    padding: 0 15px;
 }
 
 form {
