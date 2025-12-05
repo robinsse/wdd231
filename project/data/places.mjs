@@ -18,7 +18,7 @@ export const places = [
         "island": "Big Island",
         "cost": "250-400 USD",
         "description": "Aerial views of active volcanoes, lava fields, and otherworldly landscapes.",
-        "photo": "helicopter.webp"
+        "photo": "volcanoes.webp"
     },
     {
         "name": "N\u0101 Pali Coast Boat Tour",

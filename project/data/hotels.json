@@ -95,6 +95,30 @@
             "website": "https://www.princeville.com",
             "image": "images/princeville.webp",
             "rating": 5
+        },
+        {
+            "name": "Aulani, A Disney Resort & Spa",
+            "address": "92-1185 Aliʻinui Dr, Kapolei, HI 96707",
+            "phone": "(808) 674-6200",
+            "website": "https://www.disneyaulani.com",
+            "image": "images/aulani.webp",
+            "rating": 5
+        },
+        {
+            "name": "Grand Naniloa Hotel Hilo",
+            "address": "93 Banyan Dr, Hilo, HI 96720",
+            "phone": "(808) 935-0826",
+            "website": "https://www.grandnaniloahilo.com",
+            "image": "images/naniloa.webp",
+            "rating": 4
+        },
+        {
+            "name": "Hotel Moloka'i",
+            "address": "1300 Kamehameha V Hwy, Kaunakakai, HI 96748",
+            "phone": "(808) 553-5348",
+            "website": "https://www.hotelmolokai.com",
+            "image": "images/molokai.webp",
+            "rating": 3
         }
     ]
 }
