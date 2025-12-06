@@ -219,14 +219,11 @@ footer {
 }
 
 .islands {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    display: block;
 }
 
 .islands section {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 1rem;
 }
 .weather-info, .island-image {
     margin-top: auto;
