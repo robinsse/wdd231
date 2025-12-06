@@ -46,8 +46,16 @@
 
     .list-view section {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
         padding: 20px;
+    }
+
+    .grid-view img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 
     .islands {
